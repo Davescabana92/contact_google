@@ -14,6 +14,7 @@ const contactForm = document.getElementById("contactForm");
 //
 const contactName = document.getElementById("contactName");
 const contactFirstName = document.getElementById("contactFirstName");
+const contactFonction = document.getElementById("contactFonction");
 const saveContactButton = document.getElementById("saveContactButton");
 //
 const contacts = [];
@@ -84,6 +85,7 @@ saveContactButton.addEventListener("click", (event) => {
   const contact = {
     name: contactName.value,
     firstName:  contactFirstName.value,
+    fonction: contactFonction.value,
   };
   contacts.push(contact);
   //
