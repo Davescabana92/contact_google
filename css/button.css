@@ -6,6 +6,11 @@
   transition: var(--transition);
 }
 
+.arrow-button{
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
 .button-radius-10 {
   border-radius: 10rem;
 }

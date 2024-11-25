@@ -2,6 +2,10 @@
   display: none;
 }
 
+.display-visible{
+  display: block;
+}
+
 .position {
   position: absolute;
   right: 4rem;

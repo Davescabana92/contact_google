@@ -54,7 +54,7 @@
         <div>
           <button
             type="button"
-            class="button flex items-center contain button-radius-07 button-hover-shadow"
+            class="button add-contact flex items-center contain button-radius-07 button-hover-shadow"
           >
             <span class="material-symbols-outlined margin-right-04rem">
               add
@@ -96,23 +96,18 @@
         </div>
       </section>
       <section id="main-section" class="w-90 main-section md-w-100">
-        <h3 class="title title-level-1">Contacts <span>(0)</span></h3>
-        <div class="contact-container flex justify-center items-center">
-          <div>
-            <div class="illus-size-2rem">
-              <img
-                src="./assets/illustrations/emptycontacts_animation_cell4.png"
-                alt="Empty contact illustration"
-              />
+        <!--startConctactListContainer-->
+        <div id="contactListContainer" class="display-visible">
+          <div id="emptyList" class="display-visible">
+            <h3 class="title title-level-1">Contacts <span>(0)</span></h3>
+            <div class="contact-container flex justify-center items-center">
+              <div>
+                <div class="illus-size-2rem">
+                  <img src="./assets/illustrations/emptycontacts_animation_cell4.png" alt="Empty contact illustration"/>
             </div>
             <p class="text text-align-center">Aucun contact</p>
-            <div
-              class="flex justify-center items-center margin-top-bottom-1rem"
-            >
-              <button
-                class="button button-radius-10 no-border flex items-center"
-                type="button"
-              >
+            <div class="flex justify-center items-center margin-top-bottom-1rem">
+              <button class="add-contact button button-radius-10 no-border flex items-center" type="button">
                 <span class="material-symbols-outlined margin-right-04rem">
                   person
                 </span>
@@ -121,13 +116,44 @@
             </div>
           </div>
         </div>
+          </div>
+          <div id="contactList" class="display-none"></div>
+        </div>
+        <!--end contactListContainer-->
+        <!--start contactForm-->
+        <div id="contactForm" class="display-none">
+          <div class="flex arrow-button items-center margin-top-bottom-1rem">
+
+            <button id="arrowBack" class="button button-radius-10 no-border flex items-center" type="button">
+              <span class="material-symbols-outlined margin-right-04rem">
+                arrow_back
+              </span>
+            </button>
+          </div>
+        <div class="contact-container flex justify-center items-center">
+          <div>
+            <form action="">
+              <div>
+                <input type="text" name="contactName" id="contactName">
+              </div>
+              <div>
+                <input type="text" name="contactFirstName" id="contactFirstName">
+              </div>
+              <div>
+                <button type="button" id="saveContactButton">
+                  Enregistrer
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        </div>
       </section>
     </main>
     <div class="position display-none md-display-block">
       <button
         type="button"
-        class="button flex items-center contain button-radius-07 button-shadow"
-      >
+        class="button flex items-center contain button-radius-07 button-shadow">
         <span class="material-symbols-outlined"> add </span>
       </button>
     </div>
