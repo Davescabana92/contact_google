@@ -24,3 +24,7 @@
 @import url(Illustration.css);
 /* Responsive */
 @import url(responsive.css);
+/* table */
+@import url(table.css);
+/* formulaire */
+@import url(formulaire.css);
