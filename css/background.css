@@ -9,3 +9,7 @@
   border-radius: var(--border-radius);
   transition: 1s;
 }
+
+.border-bottom {
+  border-bottom: solid 1px var(--light-gray);
+}

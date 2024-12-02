@@ -2,7 +2,7 @@
   display: none;
 }
 
-.display-visible{
+.display-visible {
   display: block;
 }
 
@@ -37,4 +37,8 @@
 
 .items-center {
   align-items: center;
+}
+
+.gap-1rem {
+  gap: 1rem;
 }

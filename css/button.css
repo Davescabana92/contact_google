@@ -6,9 +6,12 @@
   transition: var(--transition);
 }
 
-.arrow-button{
-  padding: 0.5rem;
-  border-radius: 100%;
+.btn {
+  padding: 0.5rem 1rem;
+  /* border: solid 1px var(--light-gray); */
+  background-color: transparent;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 .button-radius-10 {
@@ -21,6 +24,18 @@
 
 .no-border {
   color: var(--primary-color);
+  font-weight: 500;
+}
+
+.btn-info {
+  color: var(--primary-color);
+  border: solid 1px var(--primary-color);
+  font-weight: 500;
+}
+
+.btn-danger {
+  color: var(--danger-color);
+  border: solid 1px var(--danger-color);
   font-weight: 500;
 }
 
@@ -45,7 +60,17 @@
 .button-shadow {
   box-shadow: var(--shadow);
 }
+
 .no-border:hover {
   background-color: var(--primary-light-color);
 }
 
+.btn-info:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.btn-danger:hover {
+  color: var(--white);
+  background-color: var(--danger-color);
+}

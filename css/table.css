@@ -1,27 +1,3 @@
-table {
-    width: 100%;
-}
-th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #E5E7EB; /* Equivalent to border-gray-200 */
-}
-th {
-    font-weight: bold;
-}
-/* Hide phone number and other columns on smaller screens */
-.hidden {
-    display: none;
-}
-@media (min-width: 768px) {
-    /* For md screens (768px and up) */
-    .md\\:table-cell {
-        display: table-cell;
-    }
-}
-@media (min-width: 1024px) {
-    /* For lg screens (1024px and up) */
-    .lg\\:table-cell {
-        display: table-cell;
-    }
+.custom-collapse {
+  border-collapse: collapse;
 }
