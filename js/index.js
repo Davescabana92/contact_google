@@ -337,9 +337,9 @@ saveContact.addEventListener("click", (event) => {
 
     // Mise à jour visuelle : supprimer la ligne existante
     const contactId = contact.contactName + contact.contactFirstName + tempContactIndex;
-    const contactRow = document.getElementById(contactId);
-    if (contactRow) {
-      contactRow.remove();  // Supprimer l'ancienne ligne
+    const contactItem = document.getElementById(contactId);
+    if (contactItem){
+      contactItem.remove();  // Supprimer l'ancienne ligne
     }
 
     // Ajouter la nouvelle ligne avec les informations mises à jour
