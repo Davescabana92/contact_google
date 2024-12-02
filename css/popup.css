@@ -23,7 +23,7 @@
 }
 .popup_label_button_container{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 0.5rem;
 }
 
